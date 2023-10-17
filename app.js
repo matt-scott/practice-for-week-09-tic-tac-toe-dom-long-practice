@@ -39,6 +39,8 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         if (ext === ".jpg" || ext === ".jpeg") {
           res.setHeader("Content-Type", "image/jpeg");
+        } else if (ext === ".svg") {
+          res.setHeader("Content-Type", "image/svg+xml");
         } else if (ext === ".css") {
           res.setHeader("Content-Type", "text/css");
         } else if (ext === ".js") {

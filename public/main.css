@@ -1,1 +1,91 @@
-/* Your code here */
+/* Main container */
+.siteContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContentContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+/* Win / tie header */
+.header {
+    text-align: center;
+}
+
+/* Tic tac toe grid */
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+}
+
+[data-status='x'] {
+    background-image: url("/player-x.svg");
+}
+
+[data-status='o'] {
+    background-image: url("/player-o.svg");
+}
+
+/* Tic tac toe grid */
+/* Grid numbering system. e.g. g0 = top left grid
+        0 | 1 | 2
+        ---------
+        3 | 4 | 5
+        ---------
+        6 | 7 | 8                                   */
+
+.b0 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.b1 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.b2 {
+    border-bottom: 2px solid black;
+}
+
+.b3 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.b4 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.b5 {
+    border-bottom: 2px solid black;
+}
+
+.b6 {
+    border-right: 2px solid black;
+}
+
+.b7 {
+    border-right: 2px solid black;
+}
+
+.b8 {
+    
+}
+
+/* Action buttons (new game / give up) */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Action buttons (new game / give up) */
+.buttons {
+
+}
