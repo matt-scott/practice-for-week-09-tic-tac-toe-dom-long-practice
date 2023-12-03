@@ -11,12 +11,16 @@
         "test-4": "cypress run --spec 'cypress/integration/test1.spec.js,cypress/integration/test2.spec.js,cypress/integration/test3.spec.js'",
         "test-5": "cypress run --spec 'cypress/integration/test5.spec.js'",
         "test-6": "cypress run --spec 'cypress/integration/test6.spec.js'",
-        "test-7": "cypress run --spec 'cypress/integration/test7.spec.js'"
+        "test-7": "cypress run --spec 'cypress/integration/test7.spec.js'",
+        "start": "node app.js"
     },
     "dependencies": {},
     "devDependencies": {
       "cypress": "^9.7.0"
     },
     "author": "curriculum@appacademy.io",
-    "license": "ISC"
+    "license": "ISC",
+    "engines": {
+      "node": "16.x"
+    }
 }
